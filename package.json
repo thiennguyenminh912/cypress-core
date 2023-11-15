@@ -1,0 +1,15 @@
+{
+  "name": "cypress-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.5.1",
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6", 
+    "module": "es6",
+    "lib": ["es6", "dom"],
+    "types": [],
+    "baseUrl": ".", 
+    "paths": {
+      "helpers/*": ["cypress/helpers/*"] ,
+      "fixtures/*": ["cypress/fixtures/*"] ,
+      "types/*": ["cypress/fixtures/*"] ,
+      "e2e/*": ["cypress/fixtures/*"] ,
+    }
+  },
+  "include": ["./cypress/**/*.ts"],
+  // include, exclude, v.v.
+}
