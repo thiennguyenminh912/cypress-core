@@ -1,13 +1,17 @@
 const auth = {} as IAuthFunc;
 
-auth.login = (page: string, username: string, password: string) => {
+auth.login = (inputs, expectedFunc) => {
+  const { page, username, password } = inputs
   cy.visit(page);
-  cy.get('input[name="username"]').type(username);
-  cy.get('input[name="password"]').type(password);
-  cy.get("#submit").click();
-  cy.get(".post-content .has-text-align-center strong", {
-    timeout: 1000,
-  }).contains("Congratulations student. You successfully logged in!");
+  cy.get('#login2').click();
+  cy.wait(3000);
+  cy.get('#loginusername', { timeout: 3000 }).type(username);
+  cy.wait(3000);
+  cy.get('#loginpassword', { timeout: 3000 }).type(password);
+  cy.wait(3000);
+  cy.get('[onclick="logIn()"]').click();
+  cy.wait(3000);
+  expectedFunc(inputs);
 };
 
 export default auth;

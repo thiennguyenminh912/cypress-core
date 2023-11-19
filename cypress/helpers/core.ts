@@ -1,10 +1,10 @@
 const core = {} as ICoreFunc;
 
-core.runMutipleTestCase = (data) => {
-  for (let index = 0; index < data.length; index++) {
-    const element = data[index];
-    it(element.testCaseName, () => {
-      element.func();
+core.runMutipleTestCase = ({ testCaseName, inputs, func, expectedFunc }) => {
+  for (let index = 0; index < inputs.length; index++) {
+    const element = inputs[index];
+    it(testCaseName, () => {
+      func(element.inputs, expectedFunc);
     });
   }
 };

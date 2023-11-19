@@ -1,8 +1,10 @@
-interface ITestCase {
+interface ICoreParams {
   testCaseName: string;
-  func: () => void;
+  inputs: any[];
+  func: any;
+  expectedFunc: any;
 }
 
 interface ICoreFunc {
-  runMutipleTestCase: (data: ITestCase[]) => void;
+  runMutipleTestCase: (params: ICoreParams) => void;
 }
