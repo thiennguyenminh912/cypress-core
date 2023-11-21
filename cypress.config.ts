@@ -6,7 +6,6 @@ export default defineConfig({
       // implement node event listeners here
     },
     projectId: "",
-    specPattern: "./cypress/e2e/**.*",
-    baseUrl: "https://www.demoblaze.com"
+    specPattern: "./cypress/e2e/**.*"
   },
 });

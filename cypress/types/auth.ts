@@ -1,9 +1,3 @@
-interface IAuth {
-  page: string;
-  username: string;
-  password: string;
-}
-
 interface IAuthInputs {
   username: string;
   password: string;
@@ -12,4 +6,5 @@ interface IAuthInputs {
 
 interface IAuthFunc {
   login: (inputs: IAuthInputs, expectedFunc?: (inputs: IAuthInputs) => void) => void;
+  getNameOfUser: () => any;
 }

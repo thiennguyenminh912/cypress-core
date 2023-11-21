@@ -1,0 +1,10 @@
+I. Verify home page
+    1. Header, footer
+    2. Logo + title
+    3. List item on home page
+    4. Menu categories
+II. Verify product detail
+III. Add to cart 
+    1. Login with guest
+    2. Login with user
+    
