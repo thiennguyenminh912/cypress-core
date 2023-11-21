@@ -1,8 +1,9 @@
 I. Verify home page
-    1. Header, footer
-    2. Logo + title
-    3. List item on home page
-    4. Menu categories
+    1. Header -> ok
+    2. footer
+    3. Logo + title
+    4. List item on home page
+    5. Menu categories
 II. Verify product detail
 III. Add to cart 
     1. Login with guest
