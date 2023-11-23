@@ -8,4 +8,6 @@ II. Verify product detail
 III. Add to cart 
     1. Login with guest
     2. Login with user
-    
+IV. Authen
+    1. Login
+    2. Sign up
